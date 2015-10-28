@@ -14,19 +14,21 @@ public class Manager {
 		//TODO: IMPLEMENT THIS
 	}
 	public void DisplayTop5Players(){
-		Player [5] PlayerName;
-		List<player> players;
+		//Player [5] PlayerName;
+		int goals =0;
+		List<Player> players;
 		
-		for (Team x: leageTeam){
+		for (Team x: leageTeams){
 			players=x.getPlayers();
 			
 			for(Player play: players) {
-				int goals;
+				int playergoals = 0;
 				List<Shot> playerShots;
-				playerS = play.getShots();
+				playerShots = play.getShots();
 				
-				for(Shot s: playerS){
-					//if(s == shot.)
+				for(Shot s: playerShots){
+					if(s == Shot.Goal)
+						playergoals ++;
 				}
 			}
 			
