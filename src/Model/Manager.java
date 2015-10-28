@@ -14,7 +14,25 @@ public class Manager {
 		//TODO: IMPLEMENT THIS
 	}
 	public void DisplayTop5Players(){
-		//TODO: IMPLEMENT THIS
+		Player [5] PlayerName;
+		List<player> players;
+		
+		for (Team x: leageTeam){
+			players=x.getPlayers();
+			
+			for(Player play: players) {
+				int goals;
+				List<Shot> playerShots;
+				playerS = play.getShots();
+				
+				for(Shot s: playerS){
+					//if(s == shot.)
+				}
+			}
+			
+			
+		}
+		
 	}
 	public void DisplayTopGoalie(){
 		//TODO: IMPLEMENT THIS
